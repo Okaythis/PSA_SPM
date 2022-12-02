@@ -3,29 +3,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "PSASDK",
+    name: "OkaySDK",
     platforms: [.iOS(.v11)],
     products: [
         .library(
-            name: "PSASDK",
+            name: "OkaySDK",
             targets: ["PSACommon", "DefaultPsaUi", "PSA", "Watermarker", "FccAbstractCore"]),
     ],
     targets: [
-        .target(name: "PSASDK"),
+        .target(name: "OkaySDK"),
         .binaryTarget(name: "PSACommon",
-                      url: "https://github.com/Okaythis/PSA_SPM/raw/af708c6d74a25443db08654b07b935f01f0f1ff2/PSACommon.xcframework.zip",
-                      checksum: "978bb94dc9a19d6189dc23c44969b86add21fed54072cdb6225c4a9489880ccd"),
+                      url: "https://github.com/Okaythis/PSA_SPM/raw/ff77222bbd01407b851119cde388ce7da9df78d6/PSACommon.xcframework.zip",
+                      checksum: "8d7f8d94d73c031824e39a9d3867186cf6269bd646b018f48e5fb1968279dd4c"),
         .binaryTarget(name: "FccAbstractCore",
-                      url: "https://github.com/Okaythis/PSA_SPM/raw/af708c6d74a25443db08654b07b935f01f0f1ff2/FccAbstractCore.xcframework.zip",
-                      checksum: "0c557617c9967ad1d96d81096d6f45e7d5f56f78ae41c3b13c8e6e5675738f93"),
+                      url: "https://github.com/Okaythis/PSA_SPM/raw/ff77222bbd01407b851119cde388ce7da9df78d6/FccAbstractCore.xcframework.zip",
+                      checksum: "8bddf32a84ba0832f2d6b7f5af274a5f416ae9a3bd72415ba448a3114201886c"),
         .binaryTarget(name: "DefaultPsaUi",
-                      url: "https://github.com/Okaythis/PSA_SPM/raw/af708c6d74a25443db08654b07b935f01f0f1ff2/DefaultPsaUi.xcframework.zip",
-                      checksum: "9cbd1beb549f055ed584c87d541940210191cc5625ba559375560bdcb4fd6e9e"),
+                      url: "https://github.com/Okaythis/PSA_SPM/blob/ff77222bbd01407b851119cde388ce7da9df78d6/DefaultPsaUi.xcframework.zip",
+                      checksum: "ac7f54ebb40cc4ad49a3274d610d690697b2e871dded7236d46ccc01ac9b2fc9"),
         .binaryTarget(name: "PSA",
-                      url: "https://github.com/Okaythis/PSA_SPM/raw/af708c6d74a25443db08654b07b935f01f0f1ff2/PSA.xcframework.zip",
-                      checksum: "c9002417d4978e2864a0ae2839b9746debbee655db47c7287fef0ab8791c0c73"),
+                      url: "https://github.com/Okaythis/PSA_SPM/blob/ff77222bbd01407b851119cde388ce7da9df78d6/PSA.xcframework.zip",
+                      checksum: "126e67fcfd1ac75eba21c023d5f1dde148828fe10aa031fe8baa9fbeab8a30aa"),
         .binaryTarget(name: "Watermarker",
-                      url: "https://github.com/Okaythis/PSA_SPM/raw/af708c6d74a25443db08654b07b935f01f0f1ff2/Watermarker.xcframework.zip",
-                      checksum: "7642a90cb92a47198e2434050c6fadb02e1c31b486c6c851cab736fee38445bf"),
+                      url: "https://github.com/Okaythis/PSA_SPM/blob/ff77222bbd01407b851119cde388ce7da9df78d6/Watermarker.xcframework.zip",
+                      checksum: "5aaaa87eafee0f3a48c58ef6dbdd9df5e72022506f3f62ad0b3588ed8e7932b6"),
     ]
 )
